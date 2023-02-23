@@ -1,17 +1,17 @@
 [
   {
-    "name": "Gold Token",
-    "symbol": "GLD",
-    "address": "0x26d96d27c496b71ecb39c946f8240f6098a1fe8d",
-    "chainId": 223,
+    "name": "Wrapped MEER",
+    "symbol": "WMEER",
+    "address": "0x470cBFB236860eb5257bBF78715FB5bd77119C2F",
+    "chainId": 813,
     "decimals": 18,
-    "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059fF775485246999027B3197955.png"
+    "logoURI": ""
   },
   {
-    "name": "USDT Token",
+    "name": "Meer USD",
     "symbol": "USDT",
-    "address": "0x3e0a01c2f840849e366720844c5b11c4c8fc2344",
-    "chainId": 223,
+    "address": "0xf16FE840D83d23509fe5642FC1642BC302E12E0d",
+    "chainId": 813,
     "decimals": 18,
     "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059fF775485246999027B3197955.png"
   }

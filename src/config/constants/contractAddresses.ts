@@ -2,11 +2,12 @@ import { ChainId } from "./chainId";
 
 export default {
     multiTransfer: {
-        [ChainId.QITMEER]: "0xdC089020363aa3aF648D37F4Dfcff6C0e9f61D7C",
-        [ChainId.RINKEBY]: "0xB304F14dc0fF9bC596D5d1f0e4D67dCA3278f8cC",
-        [ChainId.KOVAN]: "0xDffd2226496D02a1108618aeA58F9aA3D5A3538F",
-        [ChainId.GOERLI]: "0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
-        [ChainId.BSC_TESTNET]: "0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
-        [ChainId.BSC]: "0xEcC118Ce3bCC08e574010100ac7d5eD65160fc70",
+        [ChainId.QITMEER_TESTNET]: "0x4c4d6981c043c76c26413D761a217c95289353F1",
+        [ChainId.QITMEER]: "0x4c4d6981c043c76c26413D761a217c95289353F1",
+        [ChainId.RINKEBY]: "",
+        [ChainId.KOVAN]: "",
+        [ChainId.GOERLI]: "",
+        [ChainId.BSC_TESTNET]: "",
+        [ChainId.BSC]: "",
     },
 };

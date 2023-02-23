@@ -1,14 +1,17 @@
 import { ChainId } from "./chainId";
 
+
 const Bsc = "https://raw.githubusercontent.com/sushiswap/icons/master/network/bsc.jpg";
 const Goerli = "https://raw.githubusercontent.com/sushiswap/icons/master/network/goerli.jpg";
 const Kovan = "https://raw.githubusercontent.com/sushiswap/icons/master/network/kovan.jpg";
 const Mainnet = "https://raw.githubusercontent.com/sushiswap/icons/master/network/mainnet.jpg";
 const Rinkeby = "https://raw.githubusercontent.com/sushiswap/icons/master/network/rinkeby.jpg";
 const Ropsten = "https://raw.githubusercontent.com/sushiswap/icons/master/network/ropsten.jpg";
+const MEER = "";
 
 export const NETWORK_ICON = {
-    [ChainId.QITMEER]: Mainnet,
+    [ChainId.QITMEER]: MEER,
+    [ChainId.QITMEER_TESTNET]: MEER,
     // [ChainId.ETHEREUM]: Mainnet,
     [ChainId.ROPSTEN]: Ropsten,
     [ChainId.RINKEBY]: Rinkeby,
@@ -20,6 +23,7 @@ export const NETWORK_ICON = {
 
 export const NETWORK_LABEL: { [ChainId: number]: string } = {
     [ChainId.QITMEER]: "Qitmeer",
+    [ChainId.QITMEER_TESTNET]: "Qitmeer Testnet",
     // [ChainId.ETHEREUM]: "Ethereum",
     [ChainId.RINKEBY]: "Rinkeby",
     [ChainId.ROPSTEN]: "Ropsten",

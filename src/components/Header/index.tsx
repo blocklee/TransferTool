@@ -14,35 +14,40 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const contractlist = [
     {
+        chain: "Qitmeer Testnet",
+        link: "https://testnet.qng.meerscan.io/address/0x4c4d6981c043c76c26413D761a217c95289353F1",
+        address: "0x4c4d6981c043c76c26413D761a217c95289353F1",
+    },
+    {
         chain: "Qitmeer",
-        link: "",
-        address: "",
+        link: "https://evm.meerscan.io/address/0x4c4d6981c043c76c26413D761a217c95289353F1",
+        address: "0x4c4d6981c043c76c26413D761a217c95289353F1",
     },
-    {
-        chain: "Rinkeby",
-        link: "https://rinkeby.etherscan.io/address/0xB304F14dc0fF9bC596D5d1f0e4D67dCA3278f8cC",
-        address: "0xB304F14dc0fF9bC596D5d1f0e4D67dCA3278f8cC",
-    },
-    {
-        chain: "Kovan",
-        link: "https://kovan.etherscan.io/address/0xDffd2226496D02a1108618aeA58F9aA3D5A3538F",
-        address: "0xDffd2226496D02a1108618aeA58F9aA3D5A3538F",
-    },
-    {
-        chain: "Goerli",
-        link: "https://goerli.etherscan.io/address/0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
-        address: "0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
-    },
-    {
-        chain: "BSC",
-        link: "https://bscscan.com/address/0xEcC118Ce3bCC08e574010100ac7d5eD65160fc70",
-        address: "0xEcC118Ce3bCC08e574010100ac7d5eD65160fc70",
-    },
-    {
-        chain: "BSC Testnet",
-        link: "https://testnet.bscscan.com/address/0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
-        address: "0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
-    },
+    // {
+    //     chain: "Rinkeby",
+    //     link: "https://rinkeby.etherscan.io/address/0xB304F14dc0fF9bC596D5d1f0e4D67dCA3278f8cC",
+    //     address: "0xB304F14dc0fF9bC596D5d1f0e4D67dCA3278f8cC",
+    // },
+    // {
+    //     chain: "Kovan",
+    //     link: "https://kovan.etherscan.io/address/0xDffd2226496D02a1108618aeA58F9aA3D5A3538F",
+    //     address: "0xDffd2226496D02a1108618aeA58F9aA3D5A3538F",
+    // },
+    // {
+    //     chain: "Goerli",
+    //     link: "https://goerli.etherscan.io/address/0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
+    //     address: "0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
+    // },
+    // {
+    //     chain: "BSC",
+    //     link: "https://bscscan.com/address/0xEcC118Ce3bCC08e574010100ac7d5eD65160fc70",
+    //     address: "0xEcC118Ce3bCC08e574010100ac7d5eD65160fc70",
+    // },
+    // {
+    //     chain: "BSC Testnet",
+    //     link: "https://testnet.bscscan.com/address/0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
+    //     address: "0x129beB5ed515aD15Ec74D1b61d02b92aF1b39bd5",
+    // },
 ];
 export default function Header() {
     const { account, activate, chainId, deactivate, active } = useActiveWeb3React();

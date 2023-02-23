@@ -62,6 +62,7 @@ export default function ConfirmPage(props: ConfirmProps) {
         setTableData(newArr);
     };
 
+    // 处理交易，这里有对转账数额的处理，此处是按每地址相同数量计算的
     const handleTransfer = async () => {
         try {
             setLoading(true);

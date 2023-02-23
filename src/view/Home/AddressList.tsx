@@ -34,6 +34,7 @@ export default function AddressList(props: propsInter) {
                             }
                             const addressList = e.target.value.split("\n");
                             onSetAddressListChange(addressList);
+                            // console.log(addressList)
                         }}
                         InputProps={{
                             disableUnderline: true,

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Gold Token",
+    "symbol": "GLD",
+    "address": "0x26d96d27c496b71ecb39c946f8240f6098a1fe8d",
+    "chainId": 223,
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "name": "USDT Token",
+    "symbol": "USDT",
+    "address": "0x3e0a01c2f840849e366720844c5b11c4c8fc2344",
+    "chainId": 223,
+    "decimals": 18,
+    "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059fF775485246999027B3197955.png"
+  }
+]

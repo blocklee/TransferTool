@@ -1,7 +1,9 @@
 import { ChainId } from "./chainId";
 
 const RPC = {
-    [ChainId.QITMEER]: "https://meer.testnet.meerfans.club/",
+    [ChainId.QITMEER_TESTNET]: "https://meer.testnet.meerfans.club/",
+    [ChainId.QITMEER]: "https://evm-dataseed.meerscan.com",
+    // [ChainId.QITMEER]: "https://rpc.evm.meerscan.io",
     // [ChainId.ETHEREUM]: "https://eth-mainnet.g.alchemy.com/v2/VeGNNvyUMm_WjwEF8UZi8LTsNLTp_i5L",
     // [ChainId.ETHEREUM]: 'https://eth-mainnet.alchemyapi.io/v2/HNQXSfiUcPjfpDBQaWYXjqlhTr1cEY9c',
     // [ChainId.MAINNET]: 'https://eth-mainnet.alchemyapi.io/v2/q1gSNoSMEzJms47Qn93f9-9Xg5clkmEC',

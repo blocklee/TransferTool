@@ -40,7 +40,15 @@ export const NATIVE: NativeMap = {
         address: "",
         chainId: ChainId.QITMEER,
         decimals: 18,
-        logoURI: "https://gateway.pinata.cloud/ipfs/QmWSbMuCwQzhBB6GRLYqZ87n5cnpzpYCehCAMMQmUXj4mm?_gl=1*1jcchq7*_ga*MTE4NjE3MzEwMi4xNjc2ODk5MTYz*_ga_5RMPXG14TE*MTY3Njg5OTE3NS4xLjEuMTY3Njg5OTE5Ni4zOS4wLjA.",
+        logoURI: "",
+    },
+    [ChainId.QITMEER_TESTNET]: {
+        name: "MEER Token",
+        symbol: "MEER",
+        address: "",
+        chainId: ChainId.QITMEER_TESTNET,
+        decimals: 18,
+        logoURI: "",
     },
     [ChainId.BSC_TESTNET]: {
         name: "BNB Token",
