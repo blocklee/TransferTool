@@ -1,7 +1,7 @@
 {
     "name": "my-react-app",
     "private": true,
-    "homepage": "https://meerfans.github.io/meerfansTools",
+    "homepage": "https://github.com/blocklee/TransferTool",
     "version": "0.0.0",
     "scripts": {
         "dev": "vite --port 8080",
