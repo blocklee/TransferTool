@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 interface propsInter {
     addressValue: string;
     onSetAddressChange: (value: string) => void;
-    onSetAddressListChange: (value: Array<string>) => void;
+    onSetAddressListChange: (value: any[]) => void;
     addressList: Array<string>;
 }
 export default function AddressList(props: propsInter) {
@@ -34,7 +34,8 @@ export default function AddressList(props: propsInter) {
                             }
                             const addressList = e.target.value.split("\n");
                             onSetAddressListChange(addressList);
-                            // console.log(addressList)
+                            console.log(addressList)
+                            console.log("addressValue\n"+addressValue)
                         }}
                         InputProps={{
                             disableUnderline: true,
@@ -54,3 +55,4 @@ export default function AddressList(props: propsInter) {
         </div>
     );
 }
+
