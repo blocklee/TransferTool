@@ -68,8 +68,8 @@ export default function AddressList(props: propsInter) {
                             onSetAddressListChange(newAddressList);
                             onSetAmountListChange(newAmountList);
                             // console.log("addressAmountInput:\n"+addressAmountE)
-                            console.log("addressAmountValue:\n"+addressAmountValue)
-                            console.log("addressAmountList:\n"+addressAmountList.length+"\n"+addressAmountList)
+                            // console.log("addressAmountValue:\n"+addressAmountValue)
+                            // console.log("addressAmountList:\n"+addressAmountList.length+"\n"+addressAmountList)
                             console.log(amountList)
                             console.log(addressList)
                         }}

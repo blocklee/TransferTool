@@ -101,7 +101,10 @@ export default function Home() {
     const errAddressList = useMemo(() => {
         const err: { address: string; index: number }[] = [];
         addressList.forEach((item, index) => {
-            if (isAddress(item) !== item && item !== "") {
+            // isAddress(item) !== item 如果输入的不是一个正确格式的以太坊地址，该句会报错，
+            // 例如输入了一个全是小写的地址 因为该 isAddress 方法判断地址如果是以太坊地址，会返回一个以太坊标准的地址
+            // 输入若为非标准格式，isAddress(item) !== item 判断结果会是false，因此该处直接改成 !isAddress(item)，意思是结果是 !false
+            if (!isAddress(item) && item !== "") {
                 err.push({ address: item, index });
             }
         });
