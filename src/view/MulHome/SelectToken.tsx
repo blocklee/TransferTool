@@ -24,7 +24,7 @@ export default function SelectToken(props: propsInter) {
 
     return (
         <div>
-            <div className="text-[#031a6e] text-[16px]">选择代币或输入代币地址查询（请先在测试网测试）</div>
+            <div className="text-[#031a6e] text-[16px]">选择代币或输入代币地址查询</div>
             <Autocomplete
                 id="asynchronous-demo"
                 disableClearable

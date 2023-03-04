@@ -169,7 +169,7 @@ export default function Home() {
 
                     <div className="pl-10 pr-10 text-right flex items-center">
                         <div className="w-4/5  flex items-center">
-                            <div className="text-[14px]">请按照【address,转账数量】的格式输入</div>
+                            <div className="text-[14px]">请按照【地址,数量】的格式输入，可以直接从csv复制</div>
                             {/*<div className="ml-2">*/}
                             {/*    <TextField*/}
                             {/*        id="outlined-basic"*/}

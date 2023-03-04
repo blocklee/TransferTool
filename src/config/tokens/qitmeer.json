@@ -1,8 +1,32 @@
 [
   {
-    "name": "Wrapped MEER",
-    "symbol": "WMEER",
-    "address": "0x470cBFB236860eb5257bBF78715FB5bd77119C2F",
+    "name": "Medina DAO",
+    "symbol": "MDAO",
+    "address": "0x7c67c897f1feab083938cbd0ebfadc9ccf48277c",
+    "chainId": 813,
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "name": "MeerBunny",
+    "symbol": "MB",
+    "address": "0x6D367Fbd6d6a7Bae9f2802B2187e5aFa9f3F52dc",
+    "chainId": 813,
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "name": "Mdao Exchange Token",
+    "symbol": "MET",
+    "address": "0x0c6514EbC317051f4BE124d30f4201C4309C1706",
+    "chainId": 813,
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "name": "CandySwap LPs",
+    "symbol": "CandySwap-LP",
+    "address": "0x589DD1E9DF0821d502d01ceF804E52c2f54591E4",
     "chainId": 813,
     "decimals": 18,
     "logoURI": ""
@@ -14,5 +38,13 @@
     "chainId": 813,
     "decimals": 18,
     "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059fF775485246999027B3197955.png"
+  },
+  {
+    "name": "Wrapped MEER",
+    "symbol": "WMEER",
+    "address": "0x470cBFB236860eb5257bBF78715FB5bd77119C2F",
+    "chainId": 813,
+    "decimals": 18,
+    "logoURI": ""
   }
 ]
