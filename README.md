@@ -1,7 +1,5 @@
-https://blog.csdn.net/weixin_44717047/article/details/120113869
+部署到 gh-pages
 
-vite 部署到 gh-pages
+git remote add fs <远程仓库>
 
-git subtree push --prefix dist fc gh-pages 
-
-已执行完 git add git commit
+gh-pages -d dist --remote fs
