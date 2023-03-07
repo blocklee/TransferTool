@@ -1,4 +1,5 @@
 import TextField from "@mui/material/TextField";
+import {useTranslation} from "react-i18next";
 
 interface propsInter {
     addressAmountValue: string;
@@ -23,9 +24,11 @@ export default function AddressList(props: propsInter) {
         amountList,
     } = props;
 
+    const { t } = useTranslation();
+
     return (
         <div>
-            <div className="text-[#031a6e] text-[16px]">收币地址及数量</div>
+            <div className="text-[#031a6e] text-[16px]">{t('receiveAddrM')}</div>
             {/*此处应该是设置每行序号变化的*/}
             <div className="mt-5 flex pb-5 bg-[#F9F9F9] pl-5  pt-5">
                 <div className="text-[15px] leading-[25px] mr-3 text-[#001A6B]">

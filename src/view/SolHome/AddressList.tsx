@@ -1,4 +1,5 @@
 import TextField from "@mui/material/TextField";
+import {useTranslation} from "react-i18next";
 
 interface propsInter {
     addressValue: string;
@@ -6,11 +7,15 @@ interface propsInter {
     onSetAddressListChange: (value: any[]) => void;
     addressList: Array<string>;
 }
+
 export default function AddressList(props: propsInter) {
     const { onSetAddressChange, addressValue, onSetAddressListChange, addressList } = props;
+
+    const { t } = useTranslation();
+
     return (
         <div>
-            <div className="text-[#031a6e] text-[16px]">收币地址</div>
+            <div className="text-[#031a6e] text-[16px]">{t('receiveAddrS')}</div>
             <div className="mt-5 flex pb-5 bg-[#F9F9F9] pl-5  pt-5">
                 <div className="text-[15px] leading-[25px] mr-3 text-[#001A6B]">
                     {addressList.length

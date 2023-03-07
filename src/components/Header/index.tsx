@@ -9,9 +9,14 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { UnsupportedChainIdError } from "@web3-react/core";
-import { useState } from "react";
+import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import { useTranslation } from 'react-i18next';
+
+
+
 const contractlist = [
     {
         chain: "Qitmeer Testnet",
@@ -61,11 +66,13 @@ export default function Header() {
         setAnchorEl(null);
     };
 
+    const { t } = useTranslation();
+
     return (
         <div className="w-full h-[60px] shadow-md flex justify-center items-center">
             <div className="h-full w-11/12 md:w-7/12 flex item-center justify-between">
                 <div className="w-1/2 h-full  flex items-center">
-                    <img src={logo} alt="批量转账" width="35" />
+                    <img src={logo} alt="MultiTransfer" width="35" />
                     <Button
                         id="basic-button"
                         aria-controls={open ? "basic-menu" : undefined}
@@ -78,8 +85,9 @@ export default function Header() {
                             color: "#01385A",
                         }}
                     >
-                        <img src={arrow} alt="erc20转账" />
-                        合约地址
+                        <img src={arrow} alt="erc20Transfer" />
+                        {/*合约地址*/}
+                        {t('contractAddress')}
                     </Button>
 
                     <Menu
@@ -153,7 +161,7 @@ export default function Header() {
                                     deactivate();
                                 }}
                             >
-                                断开
+                                {t('disconnect')}
                             </span>
                         )}
                     </div>

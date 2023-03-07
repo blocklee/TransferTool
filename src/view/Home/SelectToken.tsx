@@ -3,6 +3,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import CircularProgress from "@mui/material/CircularProgress";
 import TextField from "@mui/material/TextField";
 import React, { useEffect, useState } from "react";
+import {useTranslation} from "react-i18next";
 
 interface propsInter {
     tokenList: Array<any>;
@@ -16,6 +17,9 @@ export default function SelectToken(props: propsInter) {
     const { tokenList, onInChange, onEventChange, open, token } = props;
     const [options, setOptions] = useState<any>([]);
     const loading = open && options.length === 0;
+
+    const { t } = useTranslation();
+
     useEffect(() => {
         if (!open) {
             setOptions([]);
@@ -24,7 +28,9 @@ export default function SelectToken(props: propsInter) {
 
     return (
         <div>
-            <div className="text-[#031a6e] text-[16px]">选择代币或输入代币地址查询</div>
+            <div className="text-[#031a6e] text-[16px]">
+                {t('selectToken')}
+            </div>
             <Autocomplete
                 id="asynchronous-demo"
                 disableClearable

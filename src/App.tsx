@@ -6,10 +6,13 @@ import { createWeb3ReactRoot, Web3ReactProvider } from "@web3-react/core";
 import { HashRouter as Router, Route } from "react-router-dom";
 
 import Header from "@/components/Header/index";
+
 import Home from "@/view/Home";
-import MulHome from "@/view/MulHome";
-import {useState} from "react";
-import Button from "@mui/material/Button";
+// import SolHome from "@/view/SolHome";
+// import MulHome from "@/view/MulHome";
+// import {useState} from "react";
+// import Button from "@mui/material/Button";
+
 
 export function getLibrary(provider: any): Web3Provider {
     const library = new Web3Provider(provider);
@@ -19,30 +22,32 @@ export function getLibrary(provider: any): Web3Provider {
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName);
 
 function App() {
-    const [ isSwitch, setIsSwitch ] = useState(false);
+    // const [ isSwitch, setIsSwitch ] = useState(false);
 
     return (
         <Web3ReactProvider getLibrary={getLibrary}>
             <Web3ProviderNetwork getLibrary={getLibrary}>
                 <Router>
                     <Header></Header>
-                    <div>
-                        <Button
-                            // variant="contained"
-                            className="w-1/2 "
-                            onClick={() => {
-                                setIsSwitch(!isSwitch);
-                            }}
-                        >
-                            转账模式切换
-                        </Button>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <Button*/}
+                    {/*        // variant="contained"*/}
+                    {/*        className="w-1/2 "*/}
+                    {/*        onClick={() => {*/}
+                    {/*            setIsSwitch(!isSwitch);*/}
+                    {/*        }}*/}
+                    {/*    >*/}
+                    {/*        转账模式切换*/}
+                    {/*    </Button>*/}
+                    {/*</div>*/}
+
                     <Web3ReactManager>
-                        { !isSwitch ? (
-                            <Route path="/" exact component={Home} />
-                        ):(
-                            <Route path="/" exact component={MulHome} />
-                        )}
+                        {/*{ !isSwitch ? (*/}
+                        {/*    <Route path="/" exact component={SolHome} />*/}
+                        {/*):(*/}
+                        {/*    <Route path="/" exact component={MulHome} />*/}
+                        {/*)}*/}
+                        <Route path="/" exact component={Home} />
                     </Web3ReactManager>
                     {/*<Footer></Footer>*/}
                 </Router>

@@ -19,6 +19,9 @@ import TableRow from "@mui/material/TableRow";
 import { useContext, useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import { Context } from "./index";
+
+import { useTranslation } from "react-i18next";
+
 interface ConfirmProps {
     addressList: Array<string>;
     amountList: Array<string>;
@@ -52,6 +55,8 @@ export default function ConfirmPage(props: ConfirmProps) {
     const TransferInstance = useTransfer();
     const [tableData, setTableData] = useState<any>([]);
     const [loading, setLoading] = useState(false);
+
+    const { t } = useTranslation();
 
     const initArray = () => {
         let arr = addressList;
@@ -132,14 +137,14 @@ export default function ConfirmPage(props: ConfirmProps) {
 
     return (
         <div className="px-10 py-10">
-            <div className="text-[#031a6e] text-[18px]">确认交易</div>
+            <div className="text-[#031a6e] text-[18px]">{t('confirmTx')}</div>
             {/* <div className="text-[#031a6e] text-[14px] mt-10">交易速度</div> */}
 
-            <div className="text-[#031a6e] text-[14px] mt-10">地址列表</div>
+            <div className="text-[#031a6e] text-[14px] mt-10">{t('addressList')}</div>
             <div className="max-h-[300px]  overflow-auto mt-2">
                 <Table
                     sx={{
-                        minWidth: 650,
+                        minWidth: 600,
                     }}
                     stickyHeader
                 >
@@ -153,7 +158,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                     width: "30px",
                                 }}
                             >
-                                序号&nbsp;
+                                {t('tabTitle1')}&nbsp;
                             </TableCell>
                             <TableCell
                                 align="center"
@@ -163,7 +168,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                     borderLeft: "1px solid #E0E0E0",
                                 }}
                             >
-                                钱包地址&nbsp;
+                                {t('tabTitle2')}&nbsp;
                             </TableCell>
                             <TableCell
                                 align="center"
@@ -172,7 +177,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                     borderTop: "1px solid #E0E0E0",
                                 }}
                             >
-                                数量&nbsp;
+                                {t('tabTitle3')}&nbsp;
                             </TableCell>
                             <TableCell
                                 align="center"
@@ -181,7 +186,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                     borderRight: "1px solid #E0E0E0",
                                 }}
                             >
-                                操作&nbsp;
+                                {t('tabTitle4')}&nbsp;
                             </TableCell>
                         </TableRow>
                     </TableHead>
@@ -245,7 +250,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                                     },
                                                 }}
                                             >
-                                                删除
+                                                {t('delButton')}
                                             </Button>
                                         </div>
                                     </TableCell>
@@ -260,7 +265,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                     </div>
                 )}
             </div>
-            <div className="text-[#031a6e]  text-[14px] mt-10">摘要</div>
+            <div className="text-[#031a6e]  text-[14px] mt-10">{t('summary')}</div>
             <div className="m-h-96">
                 <div className="bg-[#F6F6F6] w-full h-full m-auto mt-5 border-[rgba(9,25,106,0.05)] border-solid border-[1px]">
                     <div className="flex justify-around border-[1px] border-solid border-transparent border-b-gray-300">
@@ -269,7 +274,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                 {addressList.length}
                             </div>
                             <div className="flex items-center justify-center text-gray-400 text-[10px] sm:text-[14px]">
-                                地址总数
+                                {t('summary1')}
                             </div>
                         </div>
 
@@ -282,7 +287,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                 }
                             </div>
                             <div className="flex items-center justify-center text-gray-400 text-[10px] sm:text-[14px]">
-                                代币发送总数
+                                {t('summary2')}
                             </div>
                         </div>
                     </div>
@@ -293,7 +298,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                 1
                             </div>
                             <div className="flex items-center justify-center text-gray-400 text-[10px] sm:text-[14px]">
-                                交易总数
+                                {t('summary3')}
                             </div>
                         </div>
 
@@ -302,7 +307,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                 {formatBalance(tokenBalance, token.decimals, 3)} {token.symbol}
                             </div>
                             <div className="flex items-center justify-center text-gray-400 text-[10px] sm:text-[14px]">
-                                代币余额
+                                {t('summary4')}
                             </div>
                         </div>
                     </div>
@@ -312,9 +317,9 @@ export default function ConfirmPage(props: ConfirmProps) {
                                 {formatAmount(allFee)}
                             </div>
                             <div className="flex items-center justify-center text-gray-400 text-[10px] sm:text-[14px]">
-                                预估消耗
+                                {t('summary5')}
                                 <span className="text-red-600 font-bold">
-                                    （含手续费 {formatAmount(fee)} {NATIVE[chainId].symbol}）
+                                    （{t('summary51')} {formatAmount(fee)} {NATIVE[chainId].symbol}）
                                 </span>
                             </div>
                         </div>
@@ -324,7 +329,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                 {formatBalance(nativeBalance, 18, 3)} {tokenList[0].symbol}
                             </div>
                             <div className="flex items-center justify-center text-gray-400 text-[10px] sm:text-[14px]">
-                                您的余额
+                                {t('summary6')}
                             </div>
                         </div>
                     </div>
@@ -358,7 +363,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                 handleTransfer();
                             }}
                         >
-                            发送
+                            {t('sendTx')}
                         </LoadingButton>
                     ) : (
                         <LoadingButton
@@ -370,7 +375,7 @@ export default function ConfirmPage(props: ConfirmProps) {
                                 handleApproval();
                             }}
                         >
-                            授权
+                            {t('approve')}
                         </LoadingButton>
                     )}
                 </div>
