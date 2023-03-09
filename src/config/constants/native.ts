@@ -61,5 +61,5 @@ export const NATIVE: NativeMap = {
 };
 
 export const getNative = (chainId: number) => {
-    return NATIVE[chainId] ? NATIVE[chainId] : NATIVE[ChainId.RINKEBY];
+    return NATIVE[chainId] ? NATIVE[chainId] : NATIVE[ChainId.QITMEER_TESTNET];
 };

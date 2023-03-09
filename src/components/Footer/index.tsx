@@ -33,7 +33,7 @@ export default function Footer() {
                             alt="github"
                             className="hover:cursor-pointer"
                             onClick={() => {
-                                window.open("https://github.com/Verin1005", "_blank");
+                                window.open("https://github.com/meerfans", "_blank");
                             }}
                         />
                         <img
@@ -41,7 +41,7 @@ export default function Footer() {
                             alt="telegram"
                             className="hover:cursor-pointer ml-10"
                             onClick={() => {
-                                window.open("https://t.me/daqingchong", "_blank");
+                                window.open("https://t.me/qitmeernetwork", "_blank");
                             }}
                         />
                         <img
@@ -49,7 +49,7 @@ export default function Footer() {
                             alt="discord"
                             className="hover:cursor-pointer ml-10"
                             onClick={() => {
-                                window.open("https://discord.com/users/973583783422988288", "_blank");
+                                window.open("https://discord.com/invite/xzGSmrzXTM", "_blank");
                             }}
                         />
                     </div>

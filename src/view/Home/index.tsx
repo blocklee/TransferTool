@@ -16,7 +16,7 @@ function Home() {
             <div>
                 <Button
                     // variant="contained"
-                    className="w-1/2 "
+                    className="w-1/2"
                     onClick={() => {
                         setIsSwitch(!isSwitch);
                     }}
@@ -24,7 +24,7 @@ function Home() {
                     {/*使用语言版本 key 值*/}
                     {t('modelSwitch')}
                 </Button>
-                <Button className="w-1/2 text-red-500">
+                <Button className="w-1/2">
                     <LanguageSelector onChange={() => console.log('Language changed')} />
                 </Button>
             </div>
