@@ -2,7 +2,7 @@
   "contractAddress": "ContractAddress",
   "disconnect": "Disconnect",
   "modelSwitch": "Switch Transfer Model",
-  "selectToken": "Select tokens or enter token address to search",
+  "selectToken": "Select Tokens or Enter Token Address to Search",
   "errorAddr1": "Line",
   "errorAddr2": "the address",
   "errorAddr3": "is not a valid wallet address",
