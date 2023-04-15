@@ -20,7 +20,7 @@ import { useContext, useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import { Context } from "./index";
 import {useTranslation} from "react-i18next";
-
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 interface ConfirmProps {
     addressList: Array<string>;
@@ -343,7 +343,8 @@ export default function ConfirmPage(props: ConfirmProps) {
                         <LoadingButton
                             variant="contained"
                             loading={loading}
-                            loadingPosition="start"
+                            // loadingPosition="start"
+                            startIcon={loading && <CircularProgress size={20} />}
                             className="w-32 h-12"
                             onClick={() => {
                                 handleTransfer();
@@ -356,7 +357,8 @@ export default function ConfirmPage(props: ConfirmProps) {
                             variant="contained"
                             className="w-32 h-12"
                             loading={loading}
-                            loadingPosition="start"
+                            // loadingPosition="start"
+                            startIcon={loading && <CircularProgress size={20} />}
                             onClick={() => {
                                 // setConfirm(true);
                                 handleApproval();

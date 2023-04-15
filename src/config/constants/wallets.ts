@@ -7,7 +7,7 @@ import RPC from "./rpc";
 const supportedChainIds = Object.values(ChainId) as number[];
 
 export const network = new NetworkConnector({
-    defaultChainId: 223,
+    defaultChainId: 8131,
     urls: RPC,
 });
 

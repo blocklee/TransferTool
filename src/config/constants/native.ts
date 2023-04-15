@@ -43,8 +43,8 @@ export const NATIVE: NativeMap = {
         logoURI: "",
     },
     [ChainId.QITMEER_TESTNET]: {
-        name: "MEER Token",
-        symbol: "MEER",
+        name: "MEER-T Token",
+        symbol: "MEER-T",
         address: "",
         chainId: ChainId.QITMEER_TESTNET,
         decimals: 18,

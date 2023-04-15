@@ -1,17 +1,17 @@
 [
   {
-    "name": "Gold Token",
-    "symbol": "GLD",
-    "address": "0x26d96d27c496b71ecb39c946f8240f6098a1fe8d",
-    "chainId": 223,
+    "name": "DIMTest",
+    "symbol": "DIMT",
+    "address": "0x8c47c5920d33d78916fe90eE12Ea828D4a34CCaf",
+    "chainId": 8131,
     "decimals": 18,
     "logoURI": ""
   },
   {
-    "name": "USDT Token",
+    "name": "MEER-T USDT",
     "symbol": "USDT",
-    "address": "0x3e0a01c2f840849e366720844c5b11c4c8fc2344",
-    "chainId": 223,
+    "address": "0xe75A9E4aA3476dd0d401D6Ae004332dCF98672Dc",
+    "chainId": 8131,
     "decimals": 18,
     "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059fF775485246999027B3197955.png"
   }

@@ -19,7 +19,8 @@
         "jsx": "react-jsx",
         "baseUrl": "./",
         "paths": {
-            "@/*": ["src/*"]
+            "@/*": ["src/*"],
+            "@material-ui/core/*": ["node_modules/@material-ui/core/*"]
         }
     },
     "include": ["src"],

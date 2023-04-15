@@ -1,7 +1,7 @@
 import bsc from "./bsc.json";
 import bsctestnet from "./bsctestnet.json";
 import kovan from "./kovan.json";
-import rinkeby from "./rinkeby.json";
+// import rinkeby from "./rinkeby.json";
 import ropsten from "./ropsten.json";
 import qitmeertestnet from "./qitmeertestnet.json";
 import qitmeer from "./qitmeer.json";

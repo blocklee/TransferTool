@@ -64,7 +64,7 @@
 // };
 
 export enum ChainId {
-    QITMEER_TESTNET = 223,
+    QITMEER_TESTNET = 8131,
     QITMEER = 813,
     // ETHEREUM = 1,
     ROPSTEN = 3,
