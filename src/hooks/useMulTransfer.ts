@@ -1,12 +1,13 @@
 import { Token } from "@/config/constants/types";
 import { useTransfer } from "@/hooks/useContract";
-import { accAdd, accGt, accMul, parseAmount } from "@/utils/format";
+import { accAdd, accGte, accMul, accLt, parseAmount } from "@/utils/format";
 import { isEth } from "@/utils/isEth";
 import { useEffect, useState } from "react";
 import { useActiveWeb3React } from "./useActiveWeb3React";
 import { useERC20 } from "./useContract";
 
-export const useAllowance = (token: Token, account: string, to: string) => {
+// 增加 amount: string，根据 amount 来计算授权额度是否足够
+export const useAllowance = (token: Token, account: string, to: string, amount: string) => {
     const { chainId } = useActiveWeb3React();
 
     const [isApproved, setIsApproved] = useState<boolean>(false);
@@ -21,7 +22,12 @@ export const useAllowance = (token: Token, account: string, to: string) => {
             return;
         }
         const response = await bep20Contract.allowance(account, to);
-        setIsApproved(accGt(response.toString(), "0"));
+        // setIsApproved(accGt(response.toString(), "0"));
+        const allowance = response.toString();
+        setIsApproved(accGte(allowance, amount));
+        // if (accLt(allowance, amount)) {
+        //     await approveAmount(amount);
+        // }
     };
     useEffect(() => {
         getAllowance();

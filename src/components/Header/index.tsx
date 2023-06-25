@@ -20,8 +20,8 @@ import { useTranslation } from 'react-i18next';
 const contractlist = [
     {
         chain: "Qitmeer Testnet",
-        link: "https://qng-testnet.meerscan.io/address/0x6586634284BfeB659d015d33EB14cB3CB2404379",
-        address: "0x6586634284BfeB659d015d33EB14cB3CB2404379",
+        link: "https://qng-testnet.meerscan.io/address/0x4c4d6981c043c76c26413D761a217c95289353F1",
+        address: "0x4c4d6981c043c76c26413D761a217c95289353F1",
     },
     {
         chain: "Qitmeer",

@@ -94,3 +94,8 @@ export function accGt(arg1: string, arg2: string) {
 export function accGte(arg1: string, arg2: string) {
     return new BigNumber(arg1).gte(new BigNumber(arg2));
 }
+
+// Less than
+export function accLt(arg1: string, arg2: string) {
+    return new BigNumber(arg1).lt(new BigNumber(arg2));
+}

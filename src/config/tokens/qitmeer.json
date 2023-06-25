@@ -46,5 +46,13 @@
     "chainId": 813,
     "decimals": 18,
     "logoURI": ""
+  },
+  {
+    "name": "DimAI",
+    "symbol": "DIM",
+    "address": "0xa03650818CC5162F823e72d6902A9176d8A707B0",
+    "chainId": 813,
+    "decimals": 18,
+    "logoURI": ""
   }
 ]

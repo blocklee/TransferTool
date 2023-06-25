@@ -38,7 +38,12 @@ export default function ConfirmPage(props: ConfirmProps) {
     const { nativeBalance, tokenBalance, getBalance } = useBalance(token, account);
 
     const { fee } = useTransferFee();
-    const { isApproved, getAllowance } = useAllowance(token, account, getMultiTransferAddress(chainId));
+    const { isApproved, getAllowance } = useAllowance(
+        token,
+        account,
+        getMultiTransferAddress(chainId),
+        accMul(parseAmount(sendValue, token.decimals), addressList.length),
+    );
     const { allFee, errorMessage } = useTransferGasFee({
         token,
         isApproved,
